@@ -6,7 +6,7 @@ namespace Taller_Kforce_Autos.Controllers
 {
     public class GameController : Controller
     {
-        private List<Car> cars = new()
+        private static  List<Car> cars = new()
         {
             new Car { Id = 1, Make = "Audi", Model = "R8", Year = 2018, Doors = 2, Color = "Red", Price = 79995 },
             new Car { Id = 2, Make = "Tesla", Model = "3", Year = 2018, Doors = 4, Color = "Black", Price = 54995 },
@@ -15,7 +15,7 @@ namespace Taller_Kforce_Autos.Controllers
             new Car { Id = 5, Make = "BMW", Model = "X6 M", Year = 2020, Doors = 5, Color = "Silver", Price = 62995 },
         };
 
-        private ClickCounter clicks= new ClickCounter();
+        private static ClickCounter clicks= new ClickCounter();
 
         public IActionResult Index()
         {
@@ -51,7 +51,7 @@ namespace Taller_Kforce_Autos.Controllers
         {
             try
             {
-                clicks.ClickCount = 1; //TODO: Figure out how to persist this data
+                clicks.ClickCount = clicks.ClickCount + 1;
                 for (var i = clicks.ClickCount; i <= 5000; i++)
                 {
                     var car = cars.FirstOrDefault(x => x.Id == id);
@@ -62,10 +62,10 @@ namespace Taller_Kforce_Autos.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Game");//, new { click = clicks.ClickCount });
+                        return RedirectToAction("Index", "Game");
                     }
                 }
-                return RedirectToAction("Index", "Game");//, new { click = clicks.ClickCount });
+                return RedirectToAction("Index", "Game");
 
             }
             catch (Exception ex)
