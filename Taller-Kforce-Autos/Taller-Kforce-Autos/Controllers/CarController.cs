@@ -20,7 +20,8 @@ namespace Taller_Kforce_Autos.Controllers
 
         public IActionResult Index()
         {
-            return View(cars);
+            List<Car> orderedCars = cars.OrderBy(x => x.Id).ToList();
+            return View(orderedCars);
         }
 
         public IActionResult CreateCar()
@@ -104,8 +105,9 @@ namespace Taller_Kforce_Autos.Controllers
             try
             {
                 //List<Car> cars =new List<Car> { car };
-                var lastCar = cars.LastOrDefault();
-                car.Id = lastCar.Id++;
+                List<Car> orderedCars = cars.OrderBy(x => x.Id).ToList();
+                var lastCar = orderedCars.LastOrDefault();
+                car.Id = lastCar.Id + 1;
                 cars.Add(car);
                 return base.RedirectToAction(nameof(Index));
             }
