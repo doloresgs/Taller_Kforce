@@ -1,0 +1,16 @@
+﻿@model Car
+@{
+    ViewData["Title"] = "Create New Car";
+}
+
+<div>
+    <h1>Create a Car</h1>
+    <hr />
+</div>
+<div class="row">
+    <form asp-action="Create">
+        <partial name="_form" model="@Model" />
+        <button class="btn btn-primary" type="submit">Save</button>
+        <a class="btn btn-secondary" asp-action="Cancel" asp-controller="Car">Cancel</a>
+    </form>
+</div>

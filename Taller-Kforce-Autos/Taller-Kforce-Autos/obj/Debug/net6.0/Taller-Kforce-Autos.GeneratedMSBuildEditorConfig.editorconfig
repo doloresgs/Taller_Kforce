@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Taller_Kforce_Autos
+build_property.RootNamespace = Taller_Kforce_Autos
+build_property.ProjectDir = D:\Repo_Entrevistas\Taller_Kforce\Taller-Kforce-Autos\Taller-Kforce-Autos\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Repo_Entrevistas\Taller_Kforce\Taller-Kforce-Autos\Taller-Kforce-Autos
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Car/CreateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENyZWF0ZUNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Car/DeleteCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERlbGV0ZUNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Car/EditCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXRDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Car/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Home/Car.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Repo_Entrevistas/Taller_Kforce/Taller-Kforce-Autos/Taller-Kforce-Autos/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mcip2hazxm

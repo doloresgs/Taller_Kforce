@@ -1,0 +1,17 @@
+﻿@model Car
+@{
+    ViewData["Title"] = "Delete Car";
+}
+
+
+<div>
+    <h1>Delete a Car</h1>
+    <hr />
+</div>
+<div class="row">
+    <form asp-action="Delete" asp-route-id="@Model.Id">
+        <partial name="_form" model="@Model" />
+        <button class="btn btn-primary" type="submit">Delete</button>
+        <a class="btn btn-secondary" asp-action="Cancel" asp-controller="Car">Cancel</a>
+    </form>
+</div>

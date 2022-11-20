@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Game";
+}
+
+@model Car
+
+<div>
+    <h1>Let's Play!</h1>
+    <h2>Guess the price of the car</h2>
+    <hr />
+</div>
+<div >
+    <form asp-action="Play" asp-route-id="@Model.Id">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Make</span>
+            <input asp-for="Make" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Model</span>
+            <input asp-for="Model" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Year</span>
+            <input asp-for="Year" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Doors</span>
+            <input asp-for="Doors" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Color</span>
+            <input asp-for="Color" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <hr />
+        <label class="form-label">Guess the Price!!</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input asp-for="Price" asp-route-id="@Model.Price" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <button class="btn btn-primary">PLAY!</button>
+        <button class="btn btn-secondary" asp-controller="Game" asp-action="Reload">Reload</button>
+    </form>
+</div>

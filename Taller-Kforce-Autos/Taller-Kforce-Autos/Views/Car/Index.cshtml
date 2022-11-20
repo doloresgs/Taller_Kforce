@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Cars";
+}
+@model List<Car>
+
+<div>
+    <h1>Cars</h1>
+    <hr />
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Doors</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Id</td>
+                    <td>@car.Make</td>
+                    <td>@car.Model</td>
+                    <td>@car.Year</td>
+                    <td>@car.Doors</td>
+                    <td>@car.Color</td>
+                    <td>$ @car.Price</td>
+                    <td><a class="btn btn-primary" asp-action="EditCar" asp-controller="Car" asp-route-id="@car.Id">Edit</a></td>
+                    <td><a class="btn btn-secondary" asp-action="DeleteCar" asp-controller="Car" asp-route-id="@car.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("CreateCar", "Car")'">Create</button>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@model Car
+
+<div class="mb-3">
+    <label class="form-label">Make</label>
+    <input asp-for="Make" type="text" class="form-control" id="make" placeholder="Audi">
+</div>
+<div class="mb-3">
+    <label class="form-label">Model</label>
+    <input asp-for="Model" type="text" class="form-control" id="make" placeholder="R8">
+</div>
+<div class="mb-3">
+    <label class="form-label">Year</label>
+    <input asp-for="Year" type="number" class="form-control" id="year" min="1900" max="2022" maxlength="4" minlength="4" placeholder="2000">
+    @*<div class="dropdown">@Html.DropDownList("Year", (IEnumerable<SelectListItem>)ViewBag.Years, "Select A Year", new { @class = "form-control" })</div>*@
+</div>
+<div class="mb-3">
+    <label class="form-label">Doors</label>
+    <input asp-for="Doors" type="number" class="form-control" id="doors" placeholder="2">
+</div>
+<div class="mb-3">
+    <label class="form-label">Color</label>
+    <input asp-for="Color" type="text" class="form-control" id="color" placeholder="Black">
+</div>
+<div class="mb-3">
+    <label class="form-label">Price</label>
+    <input asp-for="Price" type="number" class="form-control" id="price" placeholder="100000">
+</div>

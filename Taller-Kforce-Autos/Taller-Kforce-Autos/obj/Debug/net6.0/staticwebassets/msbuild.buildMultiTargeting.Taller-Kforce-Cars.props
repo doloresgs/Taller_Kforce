@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Taller-Kforce-Cars.props" />
+</Project>
